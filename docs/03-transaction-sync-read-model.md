@@ -16,14 +16,6 @@ nav_order: 3
 1. TOC
 {:toc}
 
----
-
-## 本章包含
-{: .no_toc }
-
-- 4. Signed Transaction 入口设计
-- 5. 事件同步和读模型
-
 ## 4. Signed Transaction 入口设计
 
 后端不能只转发 signed transaction。它必须在提交链上前完成身份、交易目标、参数语义和幂等校验。
