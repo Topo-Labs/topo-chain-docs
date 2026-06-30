@@ -1,35 +1,27 @@
 ---
-title: Home
+title: 首页
 layout: home
+nav_order: 1
+description: "Topo 链 DApp 开发者最佳实践、POC 接入、安全、测试和上线指南。"
+permalink: /
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Topo 链 DApp 开发者文档
+{: .fs-9 }
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+本文档面向 DApp 合约、后端、前端、事件消费者、搜索、运维和测试开发者，说明在 Topo 链上建设生产级 DApp 的推荐工程形态。
+{: .fs-6 .fw-300 }
 
-More specifically, the created site:
+## 快速入口
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+- [开发者文档目录]({% link docs/index.md %})
+- [总览、原则与工程架构]({% link docs/01-overview-architecture.md %})
+- [链上合约、状态机与事件契约]({% link docs/02-contract-state-events.md %})
+- [交易入口、事件同步与读模型]({% link docs/03-transaction-sync-read-model.md %})
+- [POC 接入与 Web3 商城案例]({% link docs/04-poc-integration-marketplace-case.md %})
+- [安全、测试与可观测性]({% link docs/05-security-testing-observability.md %})
+- [上线清单、反模式与开发顺序]({% link docs/06-launch-antipatterns-roadmap.md %})
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## 文档范围
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+本指南覆盖合约设计、signed transaction、事件同步、POC 接入、安全、测试、可观测性和上线检查。内容按 6 个工程主题聚合，Web3 商城作为交易型 DApp 参考案例，用于说明支付、履约、结算和贡献发放之间的边界。
